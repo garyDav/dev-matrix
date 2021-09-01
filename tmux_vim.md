@@ -86,6 +86,7 @@ z docs # Desplazarse a un proyecto
 # Dento de navigator
 sf
 /file # Busca archivos a partir del directorio actual
+
 ```
 
 
