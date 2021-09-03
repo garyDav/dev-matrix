@@ -18,6 +18,9 @@ tmux
 # Abrir 4 terminales desde mi binario ide
 ide
 
+# Nombrar instancias split
+^T q
+
 # Movernos entre instancias de terminal (^ Ctrl Move around between tmux panes)
 ^T j
 ^T k
