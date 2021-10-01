@@ -1,5 +1,14 @@
 # Dev Workflow by __Takuya__
 
+## I use Fish shell
+
+* User-friendly interactive shell
+* Userful features out of the box
+  * Syntax highlighting
+  * Autosuggestions
+  * Tab completions
+  * etc.
+
 ## Why I don't use IDE?
 
 * My personal __preference__
@@ -8,6 +17,37 @@
 * Prefer staying on __terminal__
 
 Let's __dive__ into __TERMINAL__
+
+## My Fish setup
+
+* __Fisher:__ Plugin manager for Fish
+* __shellder:__ Shell theme
+* __Nerd fonts:__ Powerline-patched font
+  * SourceCode Pro
+* __z:__ Directory jumping
+* __peco:__ Iteractive filtering tool
+  * `ctrl-r` to search the command history
+  * `ctrl-f` to search the configured directories
+* __Exa:__ A modern replacement for `ls`
+* __ghq:__ Local Git repository organizer
+
+## Install
+
+### Fisher
+
+* Plugin manager
+* Installing a plugin
+  * `fisher install <GH_REPOSITORY>`
+* Example installing `z`
+  * `fisher install jethrokuan/z`
+
+### Shellder: Shell theme
+
+* `fisher install simnalamburt/shellder`
+
+### Nerd fonts
+
+* Powershell-patched fonts
 
 ## Step by Step
 
