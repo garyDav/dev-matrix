@@ -17,24 +17,28 @@
 
 ```zsh
 $HOME/.config/
-|__nvim
-	 |__init.vim			# Root config file
-	 |__macos.vim			# macOS-specific config
-	 |__maps.vim			# Keymaps
-	 |__plug.vim			# Vim-plug config
-	 |__after					# Post-init scripts
-	 |	|__plugin/		# Plugin configs
-	 |__colors/				# Color themes
+	|__nvim
+	    |__init.vim			# Root config file
+	    |__macos.vim		# macOS-specific config
+	    |__maps.vim			# Keymaps
+	    |__plug.vim			# Vim-plug config
+	    |__after			# Post-init scripts
+	    |	|__plugin/		# Plugin configs
+	    |__colors/			# Color themes
 ```
 
 ### Update SO
 #### MacOS
-brew update
+`brew update`
+
 #### Ubuntu 20.04
+```bash
 sudo apt update
 sudo apt upgrade -y
+```
 
 ### Install NodeJS Ubuntu 20.04
+```bash
 git clone https://github.com/nvm-sh/nvm.git .nvm
 cd ~/.nvm
 git checkout v0.38.0
@@ -43,14 +47,13 @@ source ~/.bashrc
 nvm list-remote
 nvm install v12.22.5
 nvm list
-```bash
+
 # Edit files: ~/.bashrc & ~/.profile & ~/.zshrc
 
 export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # which: ~/.nvm/versions/node/v12.22.5/lib/node_modules
 ```
-
 
 ### Install Python3
 sudo apt install python3
