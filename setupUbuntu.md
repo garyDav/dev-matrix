@@ -29,6 +29,8 @@ sudo apt install fish
 chsh -s /usr/bin/fish
 
 ### Instalar FISHER
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
 fisher install jorgebucaran/nvm.fish
 nvm list-remote
 nvm install v12.22.6
@@ -180,4 +182,5 @@ tmux split-window -h -p 50
 ssh-keygen -t rsa -b 4096 -C "This is a key"
 
 
+set --universal nvm_default_version v12.9.1
 

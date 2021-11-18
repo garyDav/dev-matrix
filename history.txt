@@ -1,0 +1,162 @@
+ls
+history
+histoyr
+abbr -a history history
+nano setupUbuntu.md
+less setupUbuntu.md
+cd dev-matrix/
+cd coder/
+go version
+nano .config/fish/config.fish
+ls /usr/local/go/bin
+go
+nvim
+clear
+mv theme.conf.backup theme.conf
+cd .config/kitty/
+git clone https://github.com/craftzdog/dotfiles-public.git
+git clone https://github.com/x-motemen/ghq .ghq
+fish
+echo $SHELL
+exit
+cd ..
+export PATH=$PATH:/usr/local/go/bin
+sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
+sudo wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
+abbr -a ll exa --long --header --git
+rm -R completions/
+rm -R man/
+rm exa-linux-x86_64-v0.10.0.zip
+rm -R bin/
+sudo cp exa /usr/local/bin/
+cp exa /usr/local/bin/
+cd bin/
+unzip exa-linux-x86_64-v0.10.0.zip
+wget https://github.com/ogham/exa/releases/download/v0.10.0/exa-linux-x86_64-v0.10.0.zip
+cd Descargas/
+sudo apt install fonts-firacode
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+mkdir -p ~/.local/share/fonts
+curl https://codeload.github.com/ilancosman/tide/tar.gz/HEAD | tar -xzC $_tide_tmp_dir
+        command cp -R $_tide_tmp_dir/tide-HEAD/{completions,conf.d,functions} $__fish_config_dir
+        exec fish --init-command "set -g fish_greeting; emit _tide_init_install"
+abbr -a history peco_select_history
+set -l _tide_tmp_dir (command mktemp -d)
+fisher install oh-my-fish/plugin-peco
+sudo apt install peco
+fisher install jethrokuan/z
+fisher install simnalamburt/shellder
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+fisher -v
+fc-list
+fisher install shellder
+fisher update jorgebucaran/fisher
+fisher remove IlanCosman/tide@v5
+fisher install IlanCosman/tide@v5
+fish -v
+sudo apt-get install fish
+sudo apt-get update
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-get install fonts-powerline
+npm -v
+node -v
+nvm install v16.13.0
+nvm list-remote
+fisher install jorgebucaran/nvm.fish
+mv theme.conf theme.conf.backup
+git clone git@github.com:garyDav/dev-matrix.git
+nvim -v
+lxqt-config
+sudo apt install vlc
+sudo dpkg -i slack_4.22.0-1.1_amd64.deb
+sudo alien slack-4.22.0-0.1.fc21.x86_64.rpm
+cd Dow
+sudo apt install alien -y
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh
+npm i
+cd allivia-emr/
+git clone git@github.com:garyDav/allivia-emr.git
+sudo rm -R gammy/
+rm -R gammy/
+cat id_rsa.pub
+cd .ssh/
+ssh-keygen -t rsa -b 4096 -C "gary.2810.dav@gmail.com"
+sudo /usr/pgadmin4/bin/setup-web.sh
+sudo apt install pgadmin4-web
+sudo apt install pgadmin4
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && sudo apt update'
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+ls -la
+ln -s kitty-themes/Hipster_Green.conf theme.conf
+rm theme.conf
+mv theme.conf
+cd kitty-themes/
+ln -s kitty-themes/Homebrew.conf theme.conf
+ln -s theme.conf kitty-themes/Homebrew.conf
+nvim theme.conf
+cd kitty/
+cd .config/
+:q
+cat kitty
+nvim kitty.app/
+cd .local/
+nvim kitty/
+sudo apt-get install python3-neovim
+sudo apt-get install python-neovim
+sudo apt-get install neovim
+sudo apt install python3
+sudo apt install python
+python
+sudo apt update
+sudo apt autoremove
+sudo apt install vim
+sudo dpkg -i code_1.62.2-1636665017_amd64.deb
+pwd
+cd assets/
+cd app/
+cd resources/
+cd locales/
+cd app
+cd Postman/
+cd PO
+cd .app/
+lxqt-config-appearance
+sudo add-apt-repository ppa:indicator-brightness/ppa
+ks
+make
+sudo make install
+qmake Gammy.pro
+cd gammy
+git clone https://github.com/Fushko/gammy.git
+mkdir coder
+sudo apt install build-essential libgl1-mesa-dev qt5-default git
+sudo apt-get install indicator-brightness
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin     launch=n
+stow -v kitty.app
+cd ~/.local/stow
+sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g" ~/.local/share/applications/kitty.desktop
+cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/
+ln -s ~/.local/kitty.app/bin/kitty ~/.local/bin/
+mv bim bin
+mkdir bim
+cd .local/bi
+cd .local/kitty.app/bin/
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+cd kitty.app/
+cat kitty.app
+cat kitty.app/
+cd .local
+sudo apt-get install manpages-es
+sudo apt-get install myspell-es
+sudo apt-get install aspell-es
+sudo apt-get install language-support-es
+sudo apt-get install language-pack-es-base
+sudo apt-get install language-pack-es
+sudo apt upgrade
+sudo apt list --upgradable
+sudo apt install brave-browser
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+sudo apt install apt-transport-https curl
