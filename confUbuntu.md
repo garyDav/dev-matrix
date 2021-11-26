@@ -128,5 +128,10 @@ nvim
 ## MySQL Workbench
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 sudo apt-get install gnome-keyring
+
+# Bug defx requires Python3:
+sudo apt install python3-pip
+python3 -m pip install --user --upgrade pynvim
+nvim # :checkhealth
 ```
 
