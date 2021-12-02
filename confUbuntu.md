@@ -133,5 +133,20 @@ sudo apt-get install gnome-keyring
 sudo apt install python3-pip
 python3 -m pip install --user --upgrade pynvim
 nvim # :checkhealth
+
+# Install java16
+sudo apt install openjdk-16-jre-headless
+java -version
+
+# nvim ~/.config/fish/config.fish
+# NodeJS
+set -gx PATH node_modules/.bin $PATH
+# Go
+set -g GOPATH $HOME/go
+set -gx PATH $GOPATH/bin $PATH
+
+# update config.fish
+source ~/.config/fish/config.fish
+
 ```
 
