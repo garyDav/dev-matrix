@@ -148,5 +148,7 @@ set -gx PATH $GOPATH/bin $PATH
 # update config.fish
 source ~/.config/fish/config.fish
 
+# Install maven
+# https://maven.apache.org/download.cgi
 ```
 
