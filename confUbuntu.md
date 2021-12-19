@@ -18,6 +18,44 @@ sudo apt-get check
 sudo apt-get -f install
 sudo apt-get install --reinstall build-essential
 
+# Agregar un grupo propietario al usuario
+sudo usermod -aG docker $USER
+
+# Eliminar packetes
+sudo apt remove package
+sudo apt purge package
+sudo apt autoclean
+sudo apt search package
+
+# Primeros pasos para Termux
+apt update
+apt upgrade
+apt install proot -y
+apt install git -y
+apt install nano -y
+sudo nano /etc/hosts
+## Add line
+127.0.0.1       localhost
+## Instalar UbuntuInTermux
+git clone https://github.com/MFDGaming/ubuntu-in-termux.git
+apt install sudo
+passwd root
+## Agregar nuevo usuario
+adduser gguzman
+### Responder preguntas
+usermod -aG sudo gguzman
+### Si no agrega los permisos necesarios
+nano /etc/sudoers
+### Verificar la linea
+gguzman ALL=(ALL:ALL) ALL
+
+Cambiar de usuario
+>su gguzman
+>pwd
+>sudo apt update
+>sudo apt upgrade
+
+
 # Instalar TMUX
 sudo apt install tmux
 # Ejecutar TMUX
@@ -152,7 +190,10 @@ set -gx PATH $GOPATH/bin $PATH
 # update config.fish
 source ~/.config/fish/config.fish
 
-# Install maven
+# Instalar maven
 # https://maven.apache.org/download.cgi
+
+# Instalar markdown-preview
+# https://github.com/iamcco/markdown-preview.nvim
 ```
 
