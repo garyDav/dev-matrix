@@ -71,6 +71,7 @@ sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt-get update
 sudo apt-get install fish
 fish -v # fish, version 3.3.1
+fish #Cambiar de terminal a fish
 
 # Instalar FISHER
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
