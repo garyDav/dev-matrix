@@ -65,6 +65,7 @@ tmux
 # https://launchpad.net/~fish-shell/+archive/ubuntu/release-3/+packages
 sudo apt install fish
 sudo chsh -s /usr/bin/fish
+chsh -s /usr/bin/fish
 fish -v # fish, version 3.1.0
 # Actualizar Fish Shell
 sudo apt-add-repository ppa:fish-shell/release-3
