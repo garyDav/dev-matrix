@@ -138,6 +138,7 @@ sudo wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
 fish_add_path /usr/local/go/bin
 go version
+sudo rm -R go
 rm go1.15.5.linux-amd64.tar.gz
 
 # Instalar GHQ:
@@ -149,8 +150,7 @@ cd ~/go/bin/
 sudo cp ghq /usr/local/bin/
 chmod +x ghq
 cd
-sudo rm -R go
-rm go1.15.5.linux-amd64.tar.gz
+rm -R .ghq
 
 # Instalar PECO:
 sudo apt install peco
