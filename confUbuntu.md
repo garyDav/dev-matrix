@@ -138,6 +138,7 @@ sudo wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
 fish_add_path /usr/local/go/bin
 go version
+rm go1.15.5.linux-amd64.tar.gz
 
 # Instalar GHQ:
 git clone https://github.com/x-motemen/ghq .ghq
