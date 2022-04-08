@@ -27,9 +27,30 @@ docker cp /home/gary/coder/backup/donbosco_donbosco.sql 70ed873136dc:/tmp/
 #DONBOSCO:
 convertir a null los campos de fecha: kardex padres reguistro_nacimiento 
 
-## Para Restaurar la DB Agregar:
+## Configurar DOCKER-LAMP: Para Restaurar la DB Agregar:
 command: mysqld --max_allowed_packet=300M # En docker-compose.yml -> database -> Después de environment:
 
+### Configurar DOCKER-LAMP
+Copiar en: bin/php74/Dockerfile
+
+```docker
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Create system user to run Composer and Artisan Commands
+# RUN useradd -G www-data,root -u $uid -d /home/$user $user
+RUN mkdir -p /home/$user/.composer && \
+    chown -R $user:$user /home/$user
+```
+
+### Correr la database
+docker cp /home/gary/coder/backup/donbosco_donbosco8-04all.sql lamp-database:/tmp/ 
+docker exec -i -t lamp-database /bin/bash
+
+```mysql
+mysql -u root -p # pass: tiger
+GRANT ALL ON donbosco_donbosco.* TO 'docker'@'%';
+```
 
 ```
 
