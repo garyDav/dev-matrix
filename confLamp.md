@@ -32,7 +32,8 @@ command: mysqld --max_allowed_packet=300M # En docker-compose.yml -> database ->
 
 ### Configurar DOCKER-LAMP
 Copiar en: bin/php74/Dockerfile
-
+```
+docker-compose exec app composer install
 ```docker
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -52,7 +53,6 @@ mysql -u root -p # pass: tiger
 GRANT ALL ON donbosco_donbosco.* TO 'docker'@'%';
 ```
 
-```
 
 
 ```
