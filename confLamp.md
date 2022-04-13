@@ -1,4 +1,4 @@
-## Configuracipon LAMP
+## Configuración LAMP
 ```
 # Restore MySQL Dump
 mysql -u [user] -p [database_name] < [filename].sql
