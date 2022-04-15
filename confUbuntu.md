@@ -120,6 +120,7 @@ npm install -g tree-sitter tree-sitter-cli
 # Si existe Error npm con python
 # Instalar python3.7.4: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04
 npm config set python /usr/local/bin/python3.7
+npm install -g neovim
 
 # Install Luajit:
 sudo apt install luajit
