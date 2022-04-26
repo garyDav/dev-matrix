@@ -66,7 +66,12 @@ mysql -u root -p # pass: tiger
 GRANT ALL ON donbosco_donbosco.* TO 'docker'@'%';
 ```
 
-
+### Asignar permisos del usuario PHP a nuestras aplicaciones
+```bash
+sudo usermod -a -G www-data $USER
+sudo chgrp www-data lamp/www/apidb
+sudo chmod g+rwxs lamp/www/apidb
+```
 
 ```
 Laravel 7 requires the following php modules
