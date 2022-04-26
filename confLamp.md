@@ -69,8 +69,8 @@ GRANT ALL ON donbosco_donbosco.* TO 'docker'@'%';
 ### Asignar permisos del usuario PHP a nuestras aplicaciones
 ```bash
 sudo usermod -a -G www-data $USER
-sudo chgrp www-data lamp/www/apidb
-sudo chmod g+rwxs lamp/www/apidb
+sudo chgrp www-data -R ~/coder/lamp/www
+sudo chmod g+rwxs -R ~/coder/lamp/www
 ```
 
 ```
