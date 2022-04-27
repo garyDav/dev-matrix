@@ -122,6 +122,8 @@ npm install -g tree-sitter tree-sitter-cli
 # Instalar python3.7.4: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04
 npm config set python /usr/local/bin/python3.7
 npm install -g neovim
+pip3 install --user pynvim
+pip3 install --user --upgrade pynvim
 
 yarn global add tree-sitter tree-sitter-cli
 yarn global add diagnostic-languageserver
