@@ -24,6 +24,9 @@ docker ps
 docker exec -i -t 7601db75f112 /bin/bash
 docker cp /home/gary/coder/backup/donbosco_donbosco.sql 70ed873136dc:/tmp/
 
+docker-compose logs -f nodejs
+docker-compose exec nodejs bash
+
 ## Restore DB con docker-compose
 docker cp /home/gary/coder/backup/donbosco_donbosco19-04all.sql lamp-database:/tmp/
 cd /home/gary/coder/donbosco
