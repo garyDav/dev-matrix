@@ -20,6 +20,7 @@ sudo apt-get install --reinstall build-essential
 
 # Agregar un grupo propietario al usuario
 sudo usermod -aG docker $USER
+id -Gn $USER
 
 # Eliminar packetes
 sudo apt remove package
