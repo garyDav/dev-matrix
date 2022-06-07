@@ -29,7 +29,7 @@ docker-compose exec nodejs bash
 
 ## Restore DB con docker-compose
 docker cp /home/gary/coder/backup/donbosco_donbosco19-04all.sql lamp-database:/tmp/
-cd /home/gary/coder/donbosco
+cd /home/gary/coder/lamp
 docker-compose exec database bash
 mysql -u docker -p # password docker
 show databases;
