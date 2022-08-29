@@ -34,6 +34,8 @@ screenfetch
 
 ### IP address
 
+Desde otro equipo escanear direcciones IP con `nmap -sn 192.168.1.0/24`
+
 ```bash
 hostname -I
 ip r | grep default
