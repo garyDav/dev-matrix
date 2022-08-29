@@ -74,6 +74,11 @@ sudo apt-get update
 sudo apt-get install fish
 fish -v # fish, version 3.3.1
 fish #Cambiar de terminal a fish
+## EN DEBIAN 11
+echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_11/ /' | sudo tee /etc/apt/sources.list.d/shells:fish:release:3.list
+curl -fsSL https://download.opensuse.org/repositories/shells:fish:release:3/Debian_11/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish_release_3.gpg > /dev/null
+sudo apt update
+sudo apt install fish
 
 # Instalar FISHER
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
