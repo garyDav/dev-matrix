@@ -32,7 +32,25 @@ screenfetch
 >Si queremos ver la ip de forma remota podemos utilizar el programa: 'nmap' (Windows/Linux) ó 'Fing' (Android)
 >con 'nmap' sería: `nmap -sn 192.168.1.0/24 -oG -` ejecutar más de una vez en caso de que no reconozca.
 
+### IP address
+
+```bash
+hostname -I
+ip r | grep default
+sudo nano /etc/resolv.conf
+
+sudo nano /etc/dhcpcd.conf
+---
+interface eth0
+static ip_address=192.168.1.200/24
+static routers=192.168.1.1
+static domain_name_servers=200.87.100.10 200.87.100.40
+---
+```
+
 ### Conección por SSH
+
+Crear un archivo `ssh` __Vacio__ en la SD /boot/ssh
 
 ```bash
 ssh pi@192.168.1.9
