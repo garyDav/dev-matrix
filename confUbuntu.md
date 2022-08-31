@@ -115,6 +115,7 @@ chmod u+x nvim.appimage
 ./squashfs-root/AppRun --version
 sudo mv squashfs-root / && sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 nvim
+##Para VERSIONES > v0.5.0 // https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-source
 
 # Instalar VIM-PLUG Neovim (Unix, Linux)
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
