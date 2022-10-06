@@ -50,6 +50,11 @@ static domain_name_servers=200.87.100.10 200.87.100.40
 ---
 ```
 
+```bash
+sudo nvim /etc/netplan/50-cloud-init.yaml
+sudo netplan apply
+```
+
 ### Conección por SSH
 
 Crear un archivo `ssh` __Vacio__ en la SD /boot/ssh
