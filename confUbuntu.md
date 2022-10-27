@@ -12,6 +12,11 @@
 ```bash
 # Version de Linux
 lsb_release -a
+# Actualizar SO Linux
+sudo do-release-upgrade -d
+
+# Ajustar Brillo PC-Desktop
+lxqt-config
 
 # Problemas de dependencias
 sudo apt-get check
