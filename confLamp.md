@@ -1,4 +1,9 @@
 ## Configuración LAMP
+# Por si tienen servicios de mysql ya corriendo en su SO
+sudo systemctl stop mysql
+sudo apt install netstat
+sudo netstat -tupln
+sudo kill -9 {pid}
 ```
 # Restore MySQL Dump
 mysql -u [user] -p [database_name] < [filename].sql
