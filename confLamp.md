@@ -1,13 +1,16 @@
 ## Configuración LAMP
-# Por si tienen servicios de mysql ya corriendo en su SO
 
 ```
 # Restore MySQL Dump
 mysql -u [user] -p [database_name] < [filename].sql
 mysql -u root -p donbosco_donbosco < donbosco_donbosco.sql
 
+# Por si tienen servicios de mysql ya corriendo en su SO
 sudo systemctl stop mysql
 sudo apt remove --purge mysql-server mysql-client mysql-common
+sudo apt-get autoclean
+sudo apt-get autoremove
+sudo rm -rf /var/lib/mysql
 sudo apt install netstat
 sudo netstat -tupln
 sudo kill -9 {pid}
