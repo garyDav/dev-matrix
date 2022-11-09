@@ -7,6 +7,7 @@ mysql -u [user] -p [database_name] < [filename].sql
 mysql -u root -p donbosco_donbosco < donbosco_donbosco.sql
 
 sudo systemctl stop mysql
+sudo apt remove --purge mysql-server mysql-client mysql-common
 sudo apt install netstat
 sudo netstat -tupln
 sudo kill -9 {pid}
