@@ -207,6 +207,12 @@ nvim # :checkhealth
 ## Bug: The given command "diagnostic-languageserver" is not executable.
 npm i -g diagnostic-languageserver
 
+npm install -g yarn
+yarn add global tree-sitter
+yarn add global tree-sitter-cli
+yarn add global neovim
+yarn add global diagnostic-languageserver
+
 
 # Install java16
 sudo apt install openjdk-16-jre-headless
