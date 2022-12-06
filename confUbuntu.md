@@ -207,11 +207,26 @@ nvim # :checkhealth
 ## Bug: The given command "diagnostic-languageserver" is not executable.
 npm i -g diagnostic-languageserver
 
+## CONFIG dotfiles configuration NVIM
+https://github.com/sumneko/lua-language-server/wiki/Getting-Started#linuxmacos
 npm install -g yarn
 yarn add global tree-sitter
 yarn add global tree-sitter-cli
 yarn add global neovim
 yarn add global diagnostic-languageserver
+
+:PackerInstall
+:LspInfo
+
+## En caso de error
+https://launchpad.net/ubuntu/+source/tree-sitter
+https://github.com/williamboman/nvim-lsp-installer#setup
+:LspInstallInfo
+:checkhealth nvim_treesitter
+:checkhealth provider
+pip3 install tree-sitter
+
+
 
 
 # Install java16
