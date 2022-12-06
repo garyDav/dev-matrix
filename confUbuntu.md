@@ -221,6 +221,7 @@ yarn add global diagnostic-languageserver
 ## En caso de error
 https://launchpad.net/ubuntu/+source/tree-sitter
 https://github.com/williamboman/nvim-lsp-installer#setup
+:TSUpdate
 :LspInstallInfo
 :checkhealth nvim_treesitter
 :checkhealth provider
