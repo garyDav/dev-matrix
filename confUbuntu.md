@@ -185,6 +185,21 @@ rm -R .ghq
 # Instalar PECO:
 sudo apt install peco
 
+# Install lua-language-server: https://github.com/LuaLS/lua-language-server/wiki/Getting-Started#command-line
+git clone https://github.com/LuaLS/lua-language-server
+cd lua-language-server
+./make.sh
+./bin/lua-language-server
+# En caso de error
+sudo apt install ninja-build
+sudo mv lua-language-server /usr/local/bin/
+fish_add_path /usr/local/bin/
+
+# Configuracion NVIM
+sudo apt-get install unzip
+unzip file.zip
+
+
 
 # Descargar archivos de configuración de FISH, NVIM, TMUX
 # https://github.com/craftzdog/dotfiles-public
