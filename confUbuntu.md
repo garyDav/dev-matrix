@@ -164,12 +164,12 @@ rm exa-linux-x86_64-v0.10.0.zip
 abbr -a ll exa --long --header --git # Opcional
 
 # Instalar GO:
-sudo wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.20.2.linux-amd64.tar.gz
+sudo tar -xvf go1.20.2.linux-amd64.tar.gz
+sudo mv go /usr/local
 fish_add_path /usr/local/go/bin
 go version
-sudo rm -R go
-rm go1.15.5.linux-amd64.tar.gz
+sudo rm -R go1.20.2.linux-amd64.tar.gz
 
 # Instalar GHQ:
 git clone https://github.com/x-motemen/ghq .ghq
@@ -177,7 +177,7 @@ cd .ghq
 make install
 sudo apt install make
 cd ~/go/bin/
-sudo cp ghq /usr/local/bin/
+sudo mv ghq /usr/local/bin/
 chmod +x ghq
 cd
 rm -R .ghq
