@@ -110,7 +110,7 @@ fisher install jorgebucaran/nvm.fish
 nvm list-remote
 nvm install v16.13.0
 nvm use v12.9.1 # En caso de instalar esta versión
-set --universal nvm_default_version v16.13.0
+set --universal nvm_default_version v16.19.1 # Vesion para Instalar todo NVIM
 
 # Instalar NVIM (v0.5.1):
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
