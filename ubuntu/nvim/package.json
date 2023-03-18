@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "diagnostic-languageserver": "^1.15.0",
+    "global": "^4.4.0",
+    "neovim": "^4.10.1",
+    "tree-sitter": "^0.20.1",
+    "tree-sitter-cli": "^0.20.7"
+  }
+}
