@@ -243,6 +243,7 @@ https://github.com/williamboman/nvim-lsp-installer#setup
 pip3 install tree-sitter
 
 
+npm install -g @fsouza/prettierd
 
 
 # Install java16
