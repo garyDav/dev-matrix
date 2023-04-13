@@ -113,6 +113,7 @@ nvm use v12.9.1 # En caso de instalar esta versión
 set --universal nvm_default_version v16.19.1 # Vesion para Instalar todo NVIM
 
 # Instalar NVIM (v0.5.1):
+## Build: https://github.com/neovim/neovim/wiki/Building-Neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage
