@@ -26,6 +26,7 @@ sudo apt-get install --reinstall build-essential
 # Agregar un grupo propietario al usuario
 sudo usermod -aG docker $USER
 id -Gn $USER
+sudo chmod 666 /var/run/docker.sock # En caso de Error
 
 # Eliminar packetes
 sudo apt remove package
