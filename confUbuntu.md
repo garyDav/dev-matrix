@@ -247,6 +247,7 @@ yarn add global diagnostic-languageserver
 
 :PackerInstall
 :LspInfo
+:MasonInstall eslint_d
 
 ## En caso de error
 https://launchpad.net/ubuntu/+source/tree-sitter
