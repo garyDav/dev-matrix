@@ -129,17 +129,30 @@ Set-PoshPrompt Paradox
 oh-my-posh --init --shell pwsh --config .\takuya.omp.json | Invoke-Expression
 
 # Instalaciones
+
 scoop install nvm
+
 nvm install v20.10.0
+
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+
 Import-Module Terminal-Icons
+
 Install-Module -Name z -Force
+
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+
 Set-PSReadLineOption -PredictionSource History
+
 Set-PSReadLineOption -PredictionViewStyle ListView
+
 scoop install fzf
+
 Install-Module -Name PSFzf -Scope CurrentUser -Force
+
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Se cambia el Tema con
+
 Set-PoshPrompt M365Princess o Set-PoshPrompt atomic o Set-PoshPrompt hunk
+
