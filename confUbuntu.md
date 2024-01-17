@@ -200,6 +200,9 @@ rm -R .ghq
 # Instalar PECO:
 sudo apt install peco
 
+# Instalar ripgrep
+sudo apt install ripgrep
+
 # Install lua-language-server: https://github.com/LuaLS/lua-language-server/wiki/Getting-Started#command-line
 # Versiones https://github.com/LuaLS/lua-language-server/releases/tag/3.7.4
 git clone https://github.com/LuaLS/lua-language-server
