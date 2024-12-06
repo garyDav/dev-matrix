@@ -251,6 +251,8 @@ yarn add global diagnostic-languageserver
 
 :PackerInstall
 :LspInfo
+:Lazy
+:LazyHealth
 :MasonInstall eslint_d
 
 ## En caso de error
