@@ -228,6 +228,25 @@ git clone https://github.com/craftzdog/dotfiles-public.git
 nvim
 # >:PlugInstall
 
+# En caso de error por fuzze:
+# En la ruta:
+nvim lua/plugins/coding.lua # Al final del archivo añadir
+---
+...
+  -- Fuzzy matching configuration
+  {
+    "blink.cmp",
+    config = function()
+      require("fuzzy").setup({
+        prebuilt_binaries = {
+          force_version = "0.6.1",  -- Reemplaza con la versión que desees
+        },
+      })
+    end,
+  },
+...
+---
+
 # Bug o errores en paquetes:
 ## MySQL Workbench
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
