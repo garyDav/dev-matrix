@@ -214,6 +214,14 @@ sudo apt install ninja-build
 sudo mv lua-language-server /usr/local/bin/
 fish_add_path /usr/local/bin/
 
+# Si hay problemas al instalar make.sh
+sudo apt update && sudo apt install g++
+sudo apt install --reinstall build-essential
+### Verificar
+find /usr/lib/gcc -name cc1plus
+### Opcional reinstalar GCC completamente
+sudo apt remove --purge gcc g++ && sudo apt install gcc g++
+
 # Configuracion NVIM
 sudo apt-get install unzip
 unzip file.zip
