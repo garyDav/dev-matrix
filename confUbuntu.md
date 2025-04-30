@@ -314,5 +314,30 @@ source ~/.config/fish/config.fish
 
 # Instalar markdown-preview
 # https://github.com/iamcco/markdown-preview.nvim
+
+# Compartir FrontEnd (VITE) desde WSL
+## Eliminar regla existente
+netsh interface portproxy delete v4tov4 listenaddress=192.168.100.116 listenport=5173
+## Agregar regla "Powershell windows"
+netsh interface portproxy add v4tov4 listenaddress=192.168.100.116 listenport=5173 connectaddress=172.26.93.199 connectport=5173
+## Verificar
+netsh interface portproxy show all
+## Probar
+http://192.168.100.116:5173
+------
+Habilitar el puerto 5173 en el Firewall de Windows
+- Abre el Panel de Control y ve a Seguridad de Windows.
+- Haz clic en Firewall y protección de red.
+- En el lado derecho, selecciona Configuración avanzada.
+- En la ventana que aparece, selecciona Reglas de entrada en la barra lateral izquierda.
+- Haz clic en Nueva regla.
+- Selecciona Puerto y pulsa Siguiente.
+- Elige TCP y especifica 5173.
+- Marca la opción Permitir la conexión.
+- Asegúrate de aplicar la regla a Red privada y pública.
+- Asigna un nombre a la regla y guarda los cambios.
+------
+## En index.html de Vite comentar:
+<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
 ```
 
