@@ -141,6 +141,22 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Instalar TreeSitter:
 npm install -g tree-sitter tree-sitter-cli
 
+# With PNPM
+npm install --global corepack@latest
+pnpm bin -g
+pnpm setup
+ls /home/ggary/.local/share/pnpm
+set -g PNPM_HOME /home/ggary/.local/share/pnpm
+set -gx PATH $PNPM_HOME $PATH
+sudo apt install -y build-essential # Instalar C++ para GYP
+sudo apt install g++-12 # para node v24.12.0
+export CXXFLAGS="--std=c++20"
+
+pnpm add -g cowsay
+cowsay Hola PNPM
+pnpm add -g tree-sitter tree-sitter-cli
+pnpm rebuild -g tree-sitter
+
 ###
 # Si existe Error npm con python
 # Instalar python3.7.4: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04
