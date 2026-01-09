@@ -75,10 +75,10 @@ sudo chsh -s /usr/bin/fish
 chsh -s /usr/bin/fish
 fish -v # fish, version 3.1.0
 # Actualizar Fish Shell
-sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-add-repository ppa:fish-shell/release-4
 sudo apt-get update
 sudo apt-get install fish
-fish -v # fish, version 3.3.1
+fish -v # fish, version 4.3.3
 fish #Cambiar de terminal a fish
 ## EN DEBIAN 11
 echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_11/ /' | sudo tee /etc/apt/sources.list.d/shells:fish:release:3.list
